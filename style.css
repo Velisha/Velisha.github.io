@@ -133,17 +133,23 @@ background-image: url('/img/about-banner.jpg');
 
 /*PROGRESS BAR*/
 
-.skillst6{
+/* Skills Style 2 */
+
+.skillst2{
 	width:100%;
-	color:#black;
+	color:#fff;
 }
-.skillst6 .skillbar{
+.skillst2 .skillbar{
 	width: 100%;
-	height: 40px;
+	height: 30px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: url("../images/stripe.png") repeat scroll 0 0 #e0e0e0;
 	position:relative;
 	margin-bottom:30px;
 }
-.skillst6 .count-bar{
+.skillst2 .count-bar{
 	height: 100%;
 	width:0px;
 	position:relative;
@@ -151,39 +157,48 @@ background-image: url('/img/about-banner.jpg');
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
-.skillst6 .color-bar1{
-	background-color: #338ae7;
+.skillst2 .count-bar color-1{
+	background-color: #3389e7;
 
 }
-.skillst6 .color-bar2{
-	background-color: #fe871f;
+.skillst2 .count-bar.color-2{
+	background-color: #fd871f;
 
 }
-.skillst6 .color-bar3{
-	background-color: #bd5cb9;
+.skillst2 .count-bar.color-3{
+	background-color: #bd5bb9;
 
 }
-.skillst6 .color-bar4{
+.skillst2 .count-bar.color-4{
 	background-color: #2d7da5;
 
 }
-.skillst6 .color-bar5{
+.skillst2 .count-bar.color-5{
 	background-color: #f75d41;
 
 }
-.skillst6 .title{
+.skillst2 .title{
 	font-size:14px;
 	font-weight:400;
-	margin-left:15px;
-	line-height:40px;
+	padding-left:12px;
+	line-height:30px;
 	text-transform:uppercase;
 }
-.skillst6 .count{
+.skillst2 .count{
 	position:absolute;
 	top:0;
 	right:12px;
-	line-height:40px;
+	line-height:30px;
 	font-size:14px;
 	font-weight:400;
-	margin-right:5px;
+}
+
+/*Coustom Media Query Css*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media only screen and (max-width: 767px) {
+	
 }
