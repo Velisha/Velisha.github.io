@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Laura Bootstrap Theme</title>
     <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-
+<!-- Bootstrap Porgress BARS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:300,400|Questrial|Satisfy">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -14,11 +18,10 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+<!--      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular-animate.js"></script>-->
     </head>
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!--    <div ng-app= "">-->
     <div class="header">
       <div class="bg-color">
         <header id="main-header">
@@ -34,12 +37,13 @@
             </div>
             <div class="container blue circleBehind" id="lauraMenu">
               <ul class="nav navbar-nav navbar-right navbar-border">
-                  <li><a href="#home">Home</a></li>
-                <li><a id="#About" href="#About">About</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Work">Work</a></li>
-                <li><a href="#Contact">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact Us</a></li>
               </ul>
+                
             </div>
           </div>
         </nav>
@@ -63,10 +67,11 @@
 
         </div>
       </div>
-      <div ng-view></div>
+        
+      <div ui-view></div>
 <!--  about section-->
-<!--
-     <section id="about" class="section-padding wow fadeIn delay-05s">
+
+   <section id="about" class="section-padding wow fadeIn delay-05s">
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-right">
@@ -93,8 +98,9 @@
         <br> <br> <br> <br> <br> 
     </div>
   </section>
--->
+
 <!--   portolio section-->
+
 
   <section id="skills" class="section-padding wow fadeInUp delay-05s">
     <div class="container">
@@ -104,40 +110,47 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-6">
             <div class="wraper">
-			<div class="skillst2">
-				<div class="skillbar" data-percent="65%">
-					<div class="count-bar color-1">
-						<div class="title" style="
-    background-color: blue;
-">HTML 5</div>
-						<div class="count"></div>
-					</div>
-				</div>
-				<div class="skillbar" data-percent="79%" >
-					<div class="count-bar color-2">
-						<div class="title">CSS 3</div>
-						<div class="count"></div>
-					</div>
-				</div>
-				<div class="skillbar" data-percent="95%">
-					<div class="count-bar color-3">
-						<div class="title">Javascript</div>
-						<div class="count"></div>
-					</div>
-				</div>
-				<div class="skillbar" data-percent="70%">
-					<div class="count-bar color-4">
-						<div class="title">AngularJS</div>
-						<div class="count"></div>
-					</div>
-				</div>
-				<div class="skillbar" data-percent="70%">
-					<div class="count-bar color-5">
-						<div class="title">Bootstsrap</div>
-						<div class="count"></div>
-					</div>
-				</div>
-			</div>
+  <p>The .active class animates the progress bar:</p> 
+  <h2>Html 5</h2> 
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%;background-color:orange;">
+      90%
+    </div>
+  </div>
+  
+  <h2>CSS 3</h2> 
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%;background-color: blue;">
+      90%
+    </div>
+  </div>
+  
+  <h2>Java Script</h2> 
+    
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:85%;background-color:red;">
+        85%
+       </div>
+      </div>
+  
+    <h2>AngularJs</h2> 
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%;background-color:green;">
+      80%
+    </div>
+    </div>
+   <h2>Jquery</h2> 
+   <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%;background-color:brown;">
+      70%
+    </div>
+  </div>
+  <h2>Bootstrap</h2> 
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%;background-color:lightblue;">
+      90%
+    </div>
+  </div>
 		</div>
 		
 		
@@ -147,80 +160,91 @@
           
       </div>
     </div>
-  </section>
+  </section> 
 
+<!--   work section -->
 
-<!--     work section -->
-<!--
 <section id="work" class="section-padding wow fadeInUp">
     <div class="container">
       <div class="row">
-        <h2 class="title text-center" style="color:black">Lets See My <span class="deco">Work</span></h2>
+        <h2 class="title text-center">Lets See My <span class="deco" style="color: red;">Work</span></h2>
         <div class="col-md-2"></div>
           <div class="col-md-8 col-sm-6">
-              <img src="img/underarmour.jpg"
-          style="height:150px;width:150px;"> <br> <br>
-          <strong>UNDER ARMOUR Baltimore, MD</strong>  
+               <img src="img/M&T.jpg" style="height:150px;width:150px;">   <br> <br>      <strong>M&T Bank New York(NY)</strong>  
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <strong> August 2015 to Present</strong>
+              <strong style="margin-left: 130px;"> October 2016 to Present</strong>
               <br><br>
               <ul>
              The project involved developing the web pages. I was involved in the internal application including different other products development. The website uses HTML5/CSS3/ JavaScript /AngularJS and AJAX extensively.The Website has rich HTML / CSS / Mobile JQuery. Also deal with cross browser issues and device compatibility.
               </ul> <br>
-              <ul>	Developed the frontend of the business application using various web technologies like HTML5, CSS3, JavaScript, and jQuery, AJAX, AngularJS, NodeJS and Bootstrap</ul><br>
+			  <ul> Played a major role in creating (Functional Requirement Document) and usecase diagrams </ul>
+			  <ul> Used session cookie to implement  login & logout action </ul>
+              <ul>Developed the frontend of the business application using various web technologies like HTML5, CSS3, JavaScript, and jQuery, AJAX, AngularJS, NodeJS and Bootstrap</ul><br>
               <ul>Used AngularJS as a JavaScript MVC framework for developing single page application and giving it a dynamic functionality.</ul>
-              <ul>Exercised AngularJS for validation on multiple web forms.</ul> <br>
-              <ul>Utilized AngularJS controllers to control and exchange the data to and from backend and AngularJS scopes to display the data.
-              </ul> 
+              <ul>Developed CSS styles to maintain the uniformity of all screens throughout the applicationand poistioning screen objects </ul> <br>  
+              <ul>Utilized AngularJS controllers to control and exchange the data to and from backend and AngularJS scopes to display the data.</ul> 
               <br> <br> <br>
-               <img src="img/best%20buy.jpg" style="height:150px;width:150px;"> <br> <br>
-          <strong>Best Buy Richfield, MN</strong>  
+                <img src="img/fidelity.jpg" style="height:150px;width:150px;"> <br> <br>
+          <strong>Fidelity Investsment Boston MA </strong>  
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <strong> April 2013 – July 2015</strong>
+              <strong style="margin-left: -115px;">August 2014 - September 2016</strong>
               <br><br>
               <ul>
-                  	Worked on the website from start to finish to give it a new look using HTML/HTML5, CSS, JavaScript and jQuery.
+                  	Involved in front end migration from WCS platform to USP platform using Angular 1.5, JavaScript Framework,HTML5,CSS3,Twitter Bootstrap
               </ul> <br>
               <ul>
               	Wrote extensive jQuery code to perform validation and CSS manipulation.
               </ul> <br>
+			  <ul> Used Various data Control grid view,multi view & detail view for creating user controls </ul> <br>
               <ul>
               	Utilized jQuery UI to create various UI components like accordion menu, Calendar, Progress bar, tooltips and various other animations.
               </ul> <br>
-<ul>	Resolved Cross-browser compatibility issues.
-</ul> <br>
+				<ul>	Resolved Cross-browser compatibility issues.
+			</ul> <br>
               <ul>	Developed page layouts, navigation, animation buttons and icons.  </ul> <br>
               <ul>To make the website faster and dynamic, various tools were used such as AJAX, CSS Sprites, browser caching, etc.</ul>
               <br> <br> <br> <br>
               
-              <img src="img/sarahlogo.png" style="height:150px;width:150px;"> <br> <br>
-              <strong>New York, NY</strong>  
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <strong> May 2012 – Mar 2013</strong>
+              <img src="img/edwardjones.jpg" style="height:150px;width:150px;"> <br> <br><strong>Edward Jones St.Louis,MO</strong> <strong style="margin-left:350px;"> May 2012 – Mar 2013</strong>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <br><br>
-              <ul>
-                  	Project was to enhance and build existing and new websites, used HTML/HTML5 and CSS for website enhancing and styling.  Used JavaScript programming to enhance functionality.
-              </ul> <br>
-              <ul>
-              	Wrote extensive jQuery code to perform validation and CSS manipulation.
-              </ul> <br>
+			  <ul>         Edward Jones is a financial service firm that offers commission-based and fee-based financial products.</ul> <br> 
+			  <ul>
+					Created animation effects during the data load, waiting for the Ajax response using jQuery.             </ul><br>
+					<ul>
+					Worked with CSS3 and bootstrap to create Responsive web designs for multiple departments/pages.               </ul> <br>
               <ul> 
-              Used jQuery events to manipulates the elements based on the user interaction like ready (), hover (), click (), mouse over () and keypress ().</ul> <br>
-              <ul>Used jQuery to traverse through the DOM and access the nodes.</ul>
+					Developed Responsive web design using Media Queries and Twitter Bootstrap.           </ul> <br>
+					<ul>Used jQuery to traverse through the DOM and access the nodes.</ul> <br>
               <ul>	Used jQuery plugins for Drag and Drop, widgets, menus, forms and user interfaces </ul> <br>
               <ul>	Extensively involved in performance tuning of application and database procedures.</ul> <br>
-              <ul>Participated in bug fixing with QA team which involved cross browser testing as well as load and performance checking.
+              <ul>	Responsible for quality assurance of finished websites including the validation of web forms and links. 
               </ul>
-          </div>
-          <div class="col-md-2"></div> </div>
-    </div>
+			  
+			  <br> <br> <br> <br> 
+	          <img src="img/openxcell.jpg" style="height:150px;width:150px;"> <br> <br>
+			  <strong>OpenXcellTechnolabs Pvt. Ltd, Ahmedabad, GJ</strong>  
+		  <strong style="margin-left:130px;"> June 2008 - September 2013 </strong>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<ul> Created a custom theme based on the Studio Press Associate 1.0.1 child theme and the Genesis 1.8.2 parent theme.</ul> <br>
+			<ul> Developed the frontend of the business application using various web technologies like HTML, CSS, JavaScript, jQuery, AJAX.</ul> <br>
+			<ul> Developed CSS styles to maintain the uniformity of all the screens throughout the application and positioning of screen objects. </ul> <br>
+			<ul> Implemented various Validation Controls for client-side validation and implemented custom validation controls.  </ul> <br>
+	      </div>	
+          <div class="col-md-2"></div>	
+	</div>
+	</div>
   </section>
--->
 
-<!--      Contact us form-->
-<!--
+
+<!-- Contact us form-->
+
   <section id="contact" class="section-padding wow fadeIn delay-05s">
     <div class="container">
       <div class="row">
@@ -260,7 +284,6 @@
       </div>
       </div>
       </section>
--->
  
     
   <footer class="footer-2 text-center-xs ">
@@ -308,21 +331,14 @@
     </div>
   </footer>
   
-    <script src="jquery.min.js"></script>
-    <script src="jquery.easing.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <!-- <script src="js/jquery.bxslider.min.js"></script> -->
-    <script src="wow.js"></script>
-<!--    <script src="js/custom.js"></script>-->
-    <!--<script src="contactform/contactform.js"></script>-->
-<!--      <script src="js/jquery.js" type="text/javascript"></script>-->
-<!--		<script src="lib/jquery.appear/jquery.appear.js" type="text/javascript"></script>-->
-<!--		<script src="js/custom.js" type="text/javascript"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>         
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-route.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="app.js"> </script>
         
-        <!-- skill set2 -->
-        <script src="jquery.js" type="text/javascript"></script>
-		<script src="jquery.appear.js" type="text/javascript"></script>
-		<script src="custom.js" type="text/javascript"></script>
-    
   </body>
 </html>
