@@ -1,7 +1,8 @@
-var mainapp = angular.module("myapp",["ngRoute"]);
-mainapp.config (function($routeProvider){
+(function() {
+   var mainapp = angular.module("myapp",["ngRoute"]);
+    mainapp.config (function($routeProvider){
     $routeProvider
-    .when("/",{
+    .when("/", {
         templateUrl:"templates/home.html"
     })
     .when("/about",{
@@ -17,6 +18,8 @@ mainapp.config (function($routeProvider){
         templateUrl:"templates/contact.html"
     })
     .otherwise({
-        templateUrl:"templates/home.html"
+        redirectTo:"/",
     });
 });
+})
+();
